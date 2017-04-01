@@ -82,6 +82,14 @@ You can pass the miltiple json files as well
 skelenator app.json component.json
 ```
 
+### Dryrun
+
+It is always recommended to do a dryrun before generating the skeleton, to run `skelenator` in dryrun mode you need to pass `--dryrun`. This will not create any file or folder.
+
+```bash
+skelenator component.json --dryrun
+```
+
 ### Overwriting
 
 If any of the file already exist, `skelenator` will not overwrite it. To force overwrite, you need to pass `--overwrite`. For e.g.

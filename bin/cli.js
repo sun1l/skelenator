@@ -2,6 +2,7 @@
 'use strict';
 
 import chalk from 'chalk';
+import packageJson from '../../package.json';
 
 /**
  * Fetch the arguments passed
@@ -15,6 +16,7 @@ let argv = require('minimist')(process.argv.slice(2), {
         v: 'version'
     },
     default: {
+        dryrun: false,
         overwrite: false,
         help: false,
         version: false
@@ -27,12 +29,14 @@ let argv = require('minimist')(process.argv.slice(2), {
 let { overwrite, dryrun, help, version } = argv;
 
 if (version) {
-    console.log('version');
+    console.log(packageJson.version);
     process.exit();
 }
 
-if (help) {
-    console.log('Help!');
+if (help || argv._.length < 1) {
+    console.log(
+        chalk.blue(`Usage: ${packageJson.name} <JSON file> [options]`)
+    );
     process.exit();
 }
 

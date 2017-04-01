@@ -91,4 +91,3 @@ available at [http://contributor-covenant.org/version/1/4][version]
 
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/
-[README]: https://github.com/sun1l/dotfiles-generator/blob/master/README.md "README.md"

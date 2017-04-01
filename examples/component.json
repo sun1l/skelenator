@@ -1,0 +1,32 @@
+[
+    {
+        "folder": "components",
+        "children": [
+            {
+                "folder": "Heading",
+                "children": [
+                    {
+                        "folder": "style",
+                        "children": [
+                            {
+                                "file": "style.css"
+                            }                            
+                        ]
+                    },
+                    {
+                        "folder": "assets"
+                    },
+                    {
+                        "folder": "api"
+                    },
+                    {
+                        "file": "index.js"
+                    },
+                    {
+                        "file": "README.md"
+                    }
+                ]
+            }
+        ]
+    }
+]

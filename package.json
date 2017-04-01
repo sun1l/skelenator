@@ -1,6 +1,6 @@
 {
   "name": "skelenator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create a folder structure using a JSON file",
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",

@@ -1,0 +1,44 @@
+{
+  "name": "skelenator",
+  "version": "0.0.1",
+  "description": "Create a folder structure using a JSON file",
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "lint": "eslint bin lib src",
+    "build": "rimraf dist && babel bin --out-dir dist/bin && babel lib --out-dir dist/lib && babel src --out-dir dist/src",
+    "prepublish": "npm run lint && npm run build"
+  },
+  "bin": {
+    "skelenator": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sun1l/skelenator.git"
+  },
+  "keywords": [
+    "skelenator"
+  ],
+  "author": {
+    "name": "Sunil Kumar",
+    "url": "https://twitter.com/sun1lkumar"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sun1l/skelenator/issues"
+  },
+  "homepage": "https://github.com/sun1l/skelenator#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "fs-extra": "^2.1.2",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "airbnb-style": "^2.0.0",
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.2.0",
+    "babel-preset-latest": "^6.24.0",
+    "conventional-changelog-cli": "^1.3.1",
+    "eslint": "^3.18.0",
+    "rimraf": "^2.6.1"
+  }
+}

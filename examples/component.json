@@ -1,32 +1,30 @@
 [
-    {
-        "folder": "components",
-        "children": [
-            {
-                "folder": "Heading",
-                "children": [
-                    {
-                        "folder": "style",
-                        "children": [
-                            {
-                                "file": "style.css"
-                            }                            
-                        ]
-                    },
-                    {
-                        "folder": "assets"
-                    },
-                    {
-                        "folder": "api"
-                    },
-                    {
-                        "file": "index.js"
-                    },
-                    {
-                        "file": "README.md"
-                    }
-                ]
-            }
+  {
+    "apps/": [
+      {
+        "components/": [
+          {
+            "Heading/": [
+              "index.js",
+              "README.md"
+            ]
+          },
+          {
+            "Title/": [
+              "index.js",
+              "README.md"
+            ]
+          }
         ]
-    }
+      },
+      "app.js",
+      "test.js",
+      "Containers/",
+      {
+        "theme/": [
+          "index.css"
+        ]
+      }
+    ]
+  }
 ]

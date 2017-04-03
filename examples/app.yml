@@ -1,0 +1,26 @@
+---
+- app/:
+  - components/:
+    - Header/:
+      - styles/:
+        - styles.css
+      - data/:
+        - data.json
+      - test/:
+        - spec.js
+      - assets/
+      - index.js
+      - README.md
+    - Footer/:
+      - styles/:
+        - styles.css
+      - data/:
+        - data.json
+      - test/:
+        - spec.js
+      - assets/
+      - index.js
+      - README.md
+  - theme/:
+    - index.css
+  - app.js

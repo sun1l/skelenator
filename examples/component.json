@@ -1,28 +1,30 @@
 [
   {
-    "apps/": [
+    "app/": [
       {
         "components/": [
           {
-            "Heading/": [
-              "index.js",
-              "README.md"
-            ]
-          },
-          {
-            "Title/": [
+            "Header/": [
+              {
+                "styles/": [
+                  "styles.css"
+                ]
+              },
+              {
+                "data/": [
+                  "data.json"
+                ]
+              },
+              {
+                "test/": [
+                  "spec.js"
+                ]
+              },
+              "assets/",
               "index.js",
               "README.md"
             ]
           }
-        ]
-      },
-      "app.js",
-      "test.js",
-      "Containers/",
-      {
-        "theme/": [
-          "index.css"
         ]
       }
     ]

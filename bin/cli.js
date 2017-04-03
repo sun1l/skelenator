@@ -52,8 +52,8 @@ if (help || argv._.length < 1) {
   process.exit();
 }
 
-// Set 'overwrite' to false if dryrun or safemode is true
-overwrite = (dryrun || safemode) ? false : overwrite;
+// Set 'safemode' to false if dryrun or overwrite is true
+safemode = (dryrun || overwrite) ? false : safemode;
 
 require('../lib/skelenator')(argv._, {
   dryrun,

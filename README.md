@@ -17,69 +17,89 @@ Utility to generate folder/file structure from a JSON file.
 Global installation is recommended, it allow you to generate and update skeleton from any location without specifying an absolute path.
 
 ```bash
-npm install skelenator --global
+npm install skelenator --g
 ```
 
 ## Usage
 
-Once the `skelenator` is installed globally, you can generate the folder/file structure by passing a JSON file as argument. For e.g.
+Once the `skelenator` is installed globally, you can generate the folder/file structure by passing a JSON or YAML file as argument. For e.g.
 
 ```bash
 skelenator component.json
 ```
 
+you can pass multiple files for more complex skeleton
+
+```bash
+skelenator component.json component.yml
+```
+component.yml
+```
+---
+- app/:
+  - components/:
+    - Header/:
+      - styles/:
+        - styles.css
+      - data/:
+        - data.json
+      - test/:
+        - spec.js
+      - assets/
+      - index.js
+      - README.md
+```
+
 component.json
 ```json
 [
-    {
-        "folder": "components",
-        "children": [
-            {
-                "folder": "Heading",
-                "children": [
-                    {
-                        "folder": "style",
-                        "children": [
-                            {
-                                "file": "style.css"
-                            }                            
-                        ]
-                    },
-                    {
-                        "folder": "assets"
-                    },
-                    {
-                        "folder": "api"
-                    },
-                    {
-                        "file": "index.js"
-                    },
-                    {
-                        "file": "README.md"
-                    }
+  {
+    "app/": [
+      {
+        "components/": [
+          {
+            "Header/": [
+              {
+                "styles/": [
+                  "styles.css"
                 ]
-            }
+              },
+              {
+                "data/": [
+                  "data.json"
+                ]
+              },
+              {
+                "test/": [
+                  "spec.js"
+                ]
+              },
+              "assets/",
+              "index.js",
+              "README.md"
+            ]
+          }
         ]
-    }
+      }
+    ]
+  }
 ]
 ```
 will generate following skeleton
 
 ```bash
-.../components
-.../components/Heading
-.../components/Heading/style
-.../components/Heading/style/style.css
-.../components/Heading/assets
-.../components/Heading/api
-.../components/Heading/index.js
-.../components/Heading/README.md
-```
-
-You can pass the miltiple json files as well
-
-```bash
-skelenator app.json component.json
+.../app/
+.../app/components/
+.../app/components/Header/
+.../app/components/Header/styles/
+.../app/components/Header/styles/styles.css
+.../app/components/Header/data/
+.../app/components/Header/data/data.json
+.../app/components/Header/test/
+.../app/components/Header/test/spec.js
+.../app/components/Header/assets/
+.../app/components/Header/index.js
+.../app/components/Header/README.md
 ```
 
 ### Dryrun

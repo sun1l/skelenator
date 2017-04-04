@@ -1,5 +1,5 @@
 # Skelenator
-Utility to generate folder/file structure from a JSON file.
+Utility to generate folder/file structure from a JSON or YAML file.
 
 [![npm](https://img.shields.io/npm/v/skelenator.svg)](https://www.npmjs.com/package/skelenator)
 [![GitHub issues](https://img.shields.io/github/issues/sun1l/skelenator.svg)](https://github.com/sun1l/skelenator/issues)

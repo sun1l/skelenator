@@ -1,6 +1,6 @@
 {
   "name": "skelenator",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Utility to generate folder/file structure from a JSON or YAML file.",
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
